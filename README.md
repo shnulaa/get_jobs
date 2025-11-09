@@ -3,7 +3,7 @@
 
 [![Stars](https://img.shields.io/github/stars/loks666/get_jobs?style=flat&label=%F0%9F%8C%9Fstars&labelColor=ff4f4f&color=ff8383)](https://github.com/loks666/get_jobs)
 [![QQ交流群](https://img.shields.io/badge/🐧QQ交流群-get_jobs-0FB5EB?labelColor=235389&logoColor=white&style=flat)][qq-link]
-[![License](https://img.shields.io/badge/📑licenses-MIT-34D058?labelColor=22863A&style=flat)](https://github.com/loks666/get_jobs/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/📑license-MIT-34D058?labelColor=22863A&style=flat)](./LICENSE)
 ![Issues closed](https://img.shields.io/github/issues-search?query=repo%3Aloks666/get_jobs+is%3Aclosed&label=%F0%9F%A4%8F%F0%9F%8F%BBFissues%20closed&labelColor=008B8B&color=00CCCC)
 [![Forks](https://img.shields.io/github/forks/loks666/get_jobs?style=flat&label=%F0%9F%8F%85Forks&labelColor=800080&color=912CEE)](https://github.com/loks666/get_jobs/forks)
 
@@ -24,16 +24,16 @@
 但断剑重铸之日，便是英雄归来之时。  
 挺过这一刻，纵使刀山火海，又有何惧？**
 
-- [如何使用本程序寻找程序兼职岗位?](doc/part_job.md)
-- [你找不到工作，是因为大环境不好吗？【很重要】](doc/doc.md)
-- [少侠，请立即开始，你精彩的人生吧！【源自L站】](doc/just_do_it.md)
+- [如何使用本程序寻找程序兼职岗位?](./doc/part_job.md)
+- [你找不到工作，是因为大环境不好吗？【很重要】](./doc/doc.md)
+- [少侠，请立即开始，你精彩的人生吧！【源自L站】](./doc/just_do_it.md)
 - [许愿墙](https://fcv1y6gslc.feishu.cn/sheets/JS45sElqAhKhawtTzsYcftymnFe)
 
     - 如果你有你心仪的工作，请在我这里许下愿望，如果实现了，请记得回来更新状态
-    - 许愿墙为飞书文档，你可以编辑好以后，导出为xlsx文档，然后覆盖本项目中resources文件夹中的"**许愿墙.xlsx**"文档
+    - 许愿墙为飞书文档，你可以编辑好以后，导出为xlsx文档，然后覆盖本项目中resources文件夹中的"[**许愿墙.xlsx**](./src/main/resources/许愿墙.xlsx)"文档
     - 接下来，你就可以把xlsx文档，提交到main分支，然后……你就是本项目的开发者之一了。
     - 你可以在你的简历中加上一条，Github，热门开源项目开发者之一。
-    - 但是你需要尽可能的，熟悉本项目的逻辑，去想象某一块功能就是你做的，这样可以更从容，更优雅的"吹牛逼”。
+    - 但是你需要尽可能地熟悉本项目的逻辑，去想象某一块功能就是你做的，这样可以更从容、更优雅地“介绍项目”。
     - 只要你相信你自己，本项目就会帮你，你要记住，是你自己拯救的你自己。
 
 > 需要注意的是，提交pr的commit:请固定使用"✨I can do it！“，然后提交pr即可，剩下的，我全都搞定啦！
@@ -44,10 +44,10 @@
         1. 当天停止投递，第二天接着投，否则可能会封号。
     - **最重要的事情：不要依赖程序投递 Boss！！！**   
       手机上的 Boss，比本程序网页端靠谱得多。当你手机投的很累，又没有投够 100 个，请再使用本程序的 Boss 投递！
-    - 本项目为 GitHub 热门开源项目，目前已申请 Intelli 的开源支持计划。加入开发组意味着你可以获得 Intelli 编辑器官方的*
+    - 本项目为 GitHub 热门开源项目，目前已申请 IntelliJ 的开源支持计划。加入开发组意味着你可以获得 IntelliJ 编辑器官方的*
       *免费全家桶永久使用权**，欢迎联系我！
     - 本项目遵循 MIT 协议。是的，你可以商业化，但是——**真心希望你能帮助更多人，团结起来！**
-    - [【重要】跳转到文末更新日志](#-更新日志)
+    - [【重要】跳转到文末更新日志](#更新日志)
 
 ---
 
@@ -97,7 +97,7 @@
 
 ### 1️⃣ 使用git拉取代码
 
-```
+```bash
 git clone https://github.com/loks666/get_jobs.git
 cd get_jobs
 ```
@@ -106,7 +106,7 @@ cd get_jobs
 
 - 目前程序自动判断系统环境，使用对应的chromedriver，并进行浏览器操作
 - 但是你的Chrome版本必须是在[Chrome官网](https://googlechromelabs.github.io/chrome-for-testing)下载的，并且为对应版本(
-  默认最新)，才可使用
+  默认最新版本)，才可使用
 - 非windows的操作系统，请自行下载对应的驱动到src/main/resources路径下解压使用
 
 更多环境配置详情请点击：📚 [环境配置](https://github.com/loks666/get_jobs/wiki/环境配置)
@@ -121,9 +121,9 @@ cd get_jobs
     - 每个平台的配置转换码都在平台文件夹下的Enum类里，找到相应的代码添加到类中即可
 - 📢 企业微信消息推送设置
 
-    - 把[.env_template](src/main/resources/.env_template)文件重命名为 `.env`
+    - 把[.env_template](./src/main/resources/.env_template)文件重命名为 `.env`
     - 在企业微信中创建一个群聊，然后添加机器人，获取到机器人URL，复制到 `.env`文件中的 `HOOK_URL`即可
-    - 保持[config.yaml](src/main/resources/config.yaml)文件中 `bot.is_send`为true
+    - 保持[config.yaml](./src/main/resources/config.yaml)文件中 `bot.is_send`为true
     - 企业微信推送示例
       <img src="src/main/resources/images/companyWechat.png" alt="企业微信推送示例">
 
@@ -131,8 +131,8 @@ cd get_jobs
 
 - 🤖 AI配置
 
-    - `.env`配制如下：
-      ```
+    - `.env`配置如下：
+      ```ini
       HOOK_URL=https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=your_key_here
       BASE_URL=https://api.openai.com
       API_KEY=sk-xxx
@@ -153,11 +153,11 @@ cd get_jobs
     - AI生成的打招呼语示例  
       <img src="src/main/resources/images/AiSayHi.png" alt="AI生成的打招呼语示例">
 
-- ⚙️ **最重要的配置文件**（[💥config.yaml💥](src/main/resources/config.yaml))
-  > 因为配置文主要改动较多，所以不放在自述文件中，请自己根据需要修改
+- ⚙️ **最重要的配置文件**（[💥config.yaml💥](./src/main/resources/config.yaml))
+  > 因为配置文件主要改动较多，所以不放在自述文件中，请自己根据需要修改
 
 
-- boss直聘([Boss.java](src/main/java/boss/Boss.java))【最推荐！每日仅可发起100次新聊天，活跃度还行，但是每日投递次数太少】
+- boss直聘([Boss.java](./src/main/java/boss/Boss.java))【最推荐！每日仅可发起100次新聊天，活跃度还行，但是每日投递次数太少】
 
   > 注意：设置配置文件的sayHi为你的打招呼语，否则会投递失败
   > 投递结束后会自动更新黑名单企业，发送过不合适等消息的HR的公司会加入黑名单，不会在投递该公司
@@ -173,13 +173,13 @@ cd get_jobs
     - 目标薪资设置：expectedSalary: [ 25,35 ]
         - 单位为K，第一个数字为最低薪资，第二个数字为最高薪资，只填一个数字默认为只要求最低薪水，不要求最高薪水
 
-  ```
+  ```json
     data.json //黑名单数据，在投递结束后会查询聊天记录寻找不合适的公司添加进去
         ├── blackCompanies: List.of("复深蓝"); // 公司黑名单，多个用逗号分隔
         ├── blackRecruiters: List.of("猎头"); // 排除招聘人员，比如猎头
         └── blackJobs: List.of("外包", "外派"); // 排除岗位，比如外包，外派
   ```
-- 51job([Job.java](src/main/java/job51/Job51.java))【投递有上限，且限制搜索到的岗位数量，没什么活人】
+- 51job([Job51.java](./src/main/java/job51/Job51.java))【投递有上限，且限制搜索到的岗位数量，没什么活人】
 
   > 51job现在已经烂掉了，不建议使用
   > 现在投递一段时间后会出现投递上限
@@ -187,7 +187,7 @@ cd get_jobs
 
 >
 
-- 拉勾([Lagou.java](src/main/java/lagou/Lagou.java))【投递无上限，会限制投递的频率，没什么活人而且投不了几个岗位】
+- 拉勾([Lagou.java](./src/main/java/lagou/Lagou.java))【投递无上限，会限制投递的频率，没什么活人而且投不了几个岗位】
 
   > 默认使用微信扫码，请绑定微信账号
   > 拉勾需要指定默认投递简历(在线简历 or 附件简历)，否则会投递失败
@@ -198,7 +198,7 @@ cd get_jobs
 
 >
 
-- 猎聘([Liepin.java](src/main/java/liepin/Liepin.java))【默认打招呼无上限，主动发消息有上限，虽然成功率不高，好在量大，较为推荐】
+- 猎聘([Liepin.java](./src/main/java/liepin/Liepin.java))【默认打招呼无上限，主动发消息有上限，虽然成功率不高，好在量大，较为推荐】
 
   > 注意：需要在猎聘App最新版设置打招呼语(默或者自定义皆可)，即可自动发送消息，不会被限制
   > 只可微信扫码，请绑定微信账号
@@ -206,7 +206,7 @@ cd get_jobs
 
 >
 
-- 智联招聘([ZhiLian.java](src/main/java/zhilian/ZhiLian.java))【投递上限100左右，岗位质量较差,走投无路可以考虑】
+- 智联招聘([ZhiLian.java](./src/main/java/zhilian/ZhiLian.java))【投递上限100左右，岗位质量较差,走投无路可以考虑】
 
   > 智联招聘需要指定默认投递简历(在线简历 or 附件简历)，否则会投递失败
   > 只可微信扫码，请绑定微信账号
@@ -221,7 +221,7 @@ cd get_jobs
 ### 5️⃣ 定时投递
 
 - 目前默认Boss会定时投递两次，可以修改相关代码修改时间
-- 每个包下的Scheduled文件，即使单独针对平台的定时投递，例：[BossScheduled.java](src/main/java/boss/BossScheduled.java)
+- 每个包下的Scheduled文件，即使单独针对平台的定时投递，例：[BossScheduled.java](./src/main/java/boss/BossScheduled.java)
   ，就是boss平台每天定时投递
 - 定时投递第一次运行时会立即投递一次，到了第二天设定的时间，会再次投递，时间可以自行在代码中修改
 
@@ -230,7 +230,7 @@ cd get_jobs
 ### ️ 6️⃣ 批量投递
 
 - win平台下，配置任务计划，执行run_startall.bat脚本即可，时间可以自己设定
-- [StartAll.java](src/main/java/StartAll.java)[BossScheduled.java](src/main/java/boss/BossScheduled.java)
+- [StartAll.java](./src/main/java/StartAll.java), [BossScheduled.java](./src/main/java/boss/BossScheduled.java)
   脚本可以一键启动所有平台，需要哪些平台可以自行进行修改编辑
 
 ### ✍🏼 例:Boss投递日志
